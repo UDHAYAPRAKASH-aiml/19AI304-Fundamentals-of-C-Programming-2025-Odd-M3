@@ -1,4 +1,3 @@
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd-M3
 # IAPR-3- Module 3 - FoC
 ## 5. Implementation of one-dimensional array and multidimensional array.
 ## 6. Implementation of string manipulation.
@@ -28,7 +27,20 @@ To formulate a C program to convert a decimal number into its binary equivalent 
 ### Step 8: 
    Stop
 # Program:
+```
+#include <stdio.h>
+int main()
+{
+    int cdate=1980;
+    int ddate=2020;
+    printf("Present Age is : %d",ddate-cdate);
+}
+```
+
+
 # Output:
+<img width="659" height="256" alt="image" src="https://github.com/user-attachments/assets/a77d815b-3d8e-4ee9-a67d-55cbb383a5a6" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -67,7 +79,29 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 9: 
   Stop
 # Program:
+```
+#include<stdio.h>
+int main()
+{
+    int n,a=0,b=1,fib=0;
+    scanf("%d",&n);
+    printf("%d %d ",a,b);
+    do
+    {
+        fib=a+b;
+        printf("%d ",fib);
+        a=b;
+        b=fib;
+        n--;
+        
+    }while(n>2);
+    
+}
+```
+
 # Output:
+<img width="674" height="216" alt="image" src="https://github.com/user-attachments/assets/112dbdc8-c566-4cd5-b4a3-da1bbb1c3c78" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -101,7 +135,28 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 10: 
   Stop
 # Program:
+```
+#include <stdio.h>
+void display(int a[],int);
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+}
+       
+if(a[n-1]%2==0)
+printf("The last element %d is divisible by 2", a[n-1]);
+else
+printf("The last element %d is not divisible by 2", a[n-1]);
+}
+```
 # Output:
+<img width="1070" height="487" alt="image" src="https://github.com/user-attachments/assets/0a56fea1-71cf-4327-9119-10d6efbe0b76" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -135,7 +190,27 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8:
   Stop
 # Program:
+```
+#include<stdio.h>
+int main()
+{
+    int n;
+    scanf("%d",&n);
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(int i=0;i<n;i++)
+    {
+        if(i==n-1) continue;
+        else printf("%d ",a[i]);
+    }
+}
+```
 # Output:
+<img width="799" height="280" alt="image" src="https://github.com/user-attachments/assets/ae370316-5264-42bf-91a0-49c53a429c9b" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
@@ -169,7 +244,32 @@ Thus, the program was implemented and executed successfully, and the required ou
 ### Step 8: 
   Stop
 # Program:
+```
+#include<stdio.h>
+int main()
+{
+    int n,i,a[15];
+    scanf("%d",&n);
+    for(i=0;i<n;i++)
+    {
+        scanf("%d ",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]%2==0)
+        {
+            printf("0 ");
+        }
+        else
+        {
+            printf("1 ");
+        }
+    }
+}
+```
 # Output:
+<img width="871" height="326" alt="image" src="https://github.com/user-attachments/assets/710690d7-971a-4ed3-b6ff-602e1a36f386" />
+
 # Result: 
 Thus, the program was implemented and executed successfully, and the required output was obtained.
 
